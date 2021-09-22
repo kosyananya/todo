@@ -1,42 +1,62 @@
-.slider-wrapper {
-    width: 400px;
-    position: relative;
+body,input,button {
+    box-sizing: border-box;
+}
+.todo-list_container {
+   
+    background-color: #ccc;
+}
+.todo-list_inner {
+    max-width: 600px;
     margin: auto;
-    height: 500px;
+    padding: 20px 20px 50px;
+}
+h1 {
+    text-align: center;
 }
 
-.slider-wrapper img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.slider-wrapper .btn {
-    cursor: pointer;
-    color: #fff;
-    background-color: #787272;
+button {
     border: 0;
+    cursor: pointer;
 }
-.slider-wrapper .next-btn, .slider-wrapper .prev-btn {
-    position: absolute;
-    top: 50%;
-    font-size: 26px;
-    background-color: #787272;
-    width: 40px;
+
+.add-todo_btn {
+    width: 100px;
     height: 40px;
 }
 
-.slider-wrapper .next-btn {
+.todo-input {
+    width: calc(100% - 100px);
+    height: 40px;
+    border: 0;
+    padding: 10px;
+}
+
+input:focus {
+    outline: none;
+}
+.todo-list_inner input {
+    float: left;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #d8d8d8;
+}
+.todo-list li {
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    position: relative;
+    padding-right: 60px;
+
+}
+
+
+.todo-list .delete-todo_btn {
+    position: absolute;
     right: 0;
-}
-
-.slider-wrapper .prev-btn {
-    left: 0;
-}
-
-.play-btn, .stop-btn {
-    padding: 10px 20px;
-    font-size: 16px;
-}
-.play-btn {
-    margin-right: 10px;
+    width: 50px;
+    top: 0;
+    bottom: 0;
 }
